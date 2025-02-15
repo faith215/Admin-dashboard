@@ -1,0 +1,271 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: gainsboro;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: grid;
+    grid-area: 1/2/2/4;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    width: 500px;
+    height: 20px;
+    margin-left: 5px;
+    border-radius: 15px;
+    border: none;
+    background-color: gainsboro;
+}
+
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.header1_profile {
+    display: flex;
+    align-items: center;
+}
+
+.header1_profile>* {
+    margin-left: 20px;
+}
+
+.header1_profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.header1_profile-name {
+    font-weight: 700;
+}
+
+.header2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+}
+
+.header2_profile {
+    display: flex;
+    align-items: center;
+}
+
+.header2_profile-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.header2_profile-text {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.header2_profile-text_name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    border-radius: 15px;
+    margin-left: 15px;
+    border: none;
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: navy;
+}
+
+.sidenav {
+    display: grid;
+    grid-row: 1/3;
+    background-color: blue;
+    padding: 35px 20px;
+    color: whitesmoke;
+
+}
+
+.sidenav_dasboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sidenav_dashboard-icon {
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.sidenav_dashboard-title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sidenav_item {
+    display: flex;
+}
+
+.sidenav_item-icon {
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.sidenav_item-icon:hover {
+    color: navy;
+    transform: scale(1.2);
+}
+
+.sidenav_item-title {
+    margin-left: 10px;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+.projects {
+    margin: 35px 15px;
+    grid-area: 2/2/3/3;
+}
+
+h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.project :hover {
+    transform: scale(1.05);
+
+}
+
+.project_content {
+    position: relative;
+    padding: 40px;
+    border: 1px solid gainsboro;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 10px;
+    border-left: 10px solid orange;
+    cursor: pointer;
+}
+
+p {
+    color: gray;
+}
+
+.project_content-title {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.project_content-icons {
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.icon_container {
+    position: relative;
+}
+
+.icon_container i {
+    cursor: pointer;
+}
+
+.floating-msg {
+    position: absolute;
+    bottom: -4px;
+    right: -0.5px;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.sidenav2 {
+    display: grid;
+    grid-area: 2/3/3/4;
+    padding: 35px 10px;
+}
+.sidenav2>div {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.sidenav2_mgt {
+    padding: 20px;
+    font-size: 12px;
+}
+hr {
+    border: 0;
+    border-top: 1.5px solid #ccc;
+    width: 95%;
+    margin: 20px 5px 0px;
+}
+.sidenav2_mgt:last-child {
+    border-bottom: none;
+}
+h2 {
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 13px;
+}
+.sidenav2_item {
+    font-size: 15px;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidenav2_item-username {
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.sidenav2_item-des {
+    color: gray;
+}
+
+.sidenav2_item-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+h3 {
+    margin-top: 35px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
